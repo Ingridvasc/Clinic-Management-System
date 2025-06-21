@@ -1,60 +1,58 @@
-# Clinic-Management-System
+# 🏥 Clinic Management System
 
-A fully functional clinic management system built with PHP Laravel framework. This web application provides comprehensive features for managing appointments, doctors, patients, invoices, and other clinic operations.
+A comprehensive clinic management solution built with PHP Laravel framework, designed to streamline medical operations and patient care.
 
-## Features
+## ✨ Key Features
 
-### Admin Panel
-- Full control over the entire system
-- Manage appointments, patients, doctors, and invoices
-- Access detailed reports and insights
-- Integrated backup system
-- Update web application settings
-- Set up user roles and access permissions
+### 🎛️ Admin Dashboard
+![Admin Panel](1.png)
+- Complete system control
+- User role management
+- Automated backups
 
-### Department, Services, and Packages
-- Manage clinic departments (e.g., hematology, microbiology)
-- Add and manage clinic services with pricing and tax options
-- Create service packages with combined offerings
+### 👨‍⚕️ Doctor & Patient Management
+![Doctors Interface](2.png)
+![Patients Interface](3.png)
+- Electronic health records
+- Staff scheduling
+- Treatment history tracking
 
-### Employee Management
-- Add and manage employee records (doctors, nurses, receptionists, etc.)
-- Track employee details (contact info, qualifications, working days)
-- OPD section for managing doctor-specific settings and charges
+### 📅 Appointment System
+![Scheduling](2.png)
+- Interactive calendar
+- Automated reminders
+- Resource allocation
 
-### Patient Management
-- Comprehensive patient records with detailed profiles
-- Appointment scheduling system
-- Track patient history and reports
+## 🛠️ Technology Stack
 
-### Billing and Invoices
-- Service billing with automatic tax calculation
-- OPD billing with discount options
-- Package billing
-- Printable invoice receipts
+| Backend | Frontend | Database |
+|---------|----------|----------|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" title="PHP"> PHP 8 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40" title="Bootstrap"> Bootstrap | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" title="MySQL"> MySQL |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="40" title="Laravel"> Laravel 10 | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" title="JS"> JavaScript | |
 
-### Reports
-- Service sale reports
-- OPD reports
-- Package sale reports
-- Filter reports by date range
-- Printable report formats
+## ✏️ Author <a name="author"></a>
 
-### Laboratory Management
-- Test references management
-- Various test reports (hematology, biochemistry, immunology, etc.)
-- Patient sample collection tracking
-- Test results management
+[![GitHub](https://img.shields.io/badge/-Ingrid_Vasconcelos-181717?logo=github&logoColor=white)](https://github.com/Ingridvasc)
+[![LinkedIn](https://img.shields.io/badge/-Linkedin-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ingrid-karoline-vasconcelos-da-silva-18635a230/)
 
-## Technologies Used
 
-- **Backend**: PHP with Laravel Web Framework
-- **Frontend**: Bootstrap CSS Framework
-- **Database**: MySQL
-- **Type**: Web Application
+## 🚀 Installation
 
-## Installation
+```bash
+# Clone repository
+git clone https://github.com/ingridvasc/clinic-management-system.git
+cd clinic-management-system
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ingridvasc/clinic-management-system.git
+# Install dependencies
+composer install
+npm install
+
+# Setup environment
+cp .env.example .env
+php artisan key:generate
+
+# Run migrations
+php artisan migrate --seed
+
+# Start server
+php artisan serve
